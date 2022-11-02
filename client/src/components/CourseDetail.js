@@ -78,12 +78,12 @@ function CourseDetail({ context }) {
                 Delete Course
               </NavLink>
               <NavLink exact to="/" className="button button-secondary">
-                Return to Home
+                Return to home
               </NavLink>
             </>
           ) : (
             <NavLink exact to="/" className="button button-secondary">
-              Return to Home
+              Return to home
             </NavLink>
           )}
         </div>

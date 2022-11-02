@@ -47,7 +47,7 @@ function SignUp({ context }) {
 
         {errorMessage.length > 0 && (
           <div className="validation--errors">
-            <h3>Validation Errors</h3>
+            <h3>Error!</h3>
             <ul>
               {Array.from(errorMessage).map((error, i) => (
                 <li key={i}>{error}</li>
@@ -73,7 +73,7 @@ function SignUp({ context }) {
             onChange={(e) => setLastName(e.target.value)}
             value={lastName}
           />
-          <label htmlFor="emailAddress">Email Address</label>
+          <label htmlFor="emailAddress">Email</label>
           <input
             id="emailAddress"
             name="emailAddress"

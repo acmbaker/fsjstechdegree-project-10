@@ -38,7 +38,7 @@ function ErrorsDisplay({ errors }) {
     errorsDisplay = (
       <div>
         <div className="validation--errors">
-          <h3>Validation errors</h3>
+          <h3>Error!</h3>
           <ul>
             {errors.map((error, i) => (
               <li key={i}>{error}</li>
