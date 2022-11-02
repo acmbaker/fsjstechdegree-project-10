@@ -1,17 +1,15 @@
-import React, { Component } from 'react';
-import Data from './Data';
+import React, { Component } from "react";
+import Data from "./Data";
 
 const Context = React.createContext();
 
 export class Provider extends Component {
-
   constructor() {
     super();
     this.data = new Data();
 
-
     this.state = {
-      authenticatedUser: null
+      authenticatedUser: null,
     };
   }
 
@@ -22,23 +20,20 @@ export class Provider extends Component {
       data: this.data,
       actions: {
         signIn: this.signIn,
-        signOut: this.signOut
+        signOut: this.signOut,
       },
     };
     return (
-      <Context.Provider value={value}>
-        {this.props.children}
-      </Context.Provider>
+      <Context.Provider value={value}>{this.props.children}</Context.Provider>
     );
   }
 
-  
   signIn = async (username, password) => {
     const user = await this.data.getUser(username, password);
     const plainText = password;
     if (user !== null) {
-        user.password = plainText;
-        console.log(user);
+      user.password = plainText;
+      console.log(user);
       this.setState(() => {
         return {
           authenticatedUser: user,
@@ -46,11 +41,11 @@ export class Provider extends Component {
       });
     }
     return user;
-  }
+  };
 
   signOut = () => {
     this.setState({ authenticatedUser: null });
-  }
+  };
 }
 
 export const Consumer = Context.Consumer;
@@ -65,9 +60,8 @@ export default function withContext(Component) {
   return function ContextComponent(props) {
     return (
       <Context.Consumer>
-        {context => <Component {...props} context={context} />}
+        {(context) => <Component {...props} context={context} />}
       </Context.Consumer>
     );
-  }
+  };
 }
-
