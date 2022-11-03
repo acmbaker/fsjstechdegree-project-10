@@ -1,4 +1,4 @@
-/* This page contains the code which allows the user to edit their courses */
+// This page contains the code which allows the user to edit their courses
 
 import React, { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";

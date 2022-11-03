@@ -1,4 +1,4 @@
-/* This file contains the code for the create course page. */
+// This file contains the code for the create course page.
 
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";

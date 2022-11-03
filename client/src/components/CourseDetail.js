@@ -1,4 +1,4 @@
-/* This file contains the code for the individual course pages and retrieves the content from the /api/courses/:id route. */
+// This file contains the code for the individual course pages and retrieves the content from the /api/courses/:id route.
 
 import React, { useState, useEffect } from "react";
 import { useParams, useHistory, NavLink } from "react-router-dom";

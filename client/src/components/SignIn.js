@@ -1,4 +1,4 @@
-/* This page contains the code for the sign in page. */
+// This page contains the code for the sign in page.
 
 import { useRef } from "react";
 import { Link, useHistory } from "react-router-dom";

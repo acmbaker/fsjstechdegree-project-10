@@ -1,4 +1,4 @@
-/* This file contains the code for the header. */
+// This file contains the code for the header.
 
 import React from "react";
 import { Link } from "react-router-dom";
