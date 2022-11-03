@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+//Main Components
 import Header from "./components/Header";
 import CourseList from "./components/CourseList";
 import CourseDetail from "./components/CourseDetail";
@@ -10,9 +11,9 @@ import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
 import SignOut from "./components/SignOut";
 
+//Context
 import withContext from "./Context";
 import PrivateRoute from "./components/PrivateRoute";
-
 const HeaderContext = withContext(Header);
 const CourseListContext = withContext(CourseList);
 const CourseDetailContext = withContext(CourseDetail);
