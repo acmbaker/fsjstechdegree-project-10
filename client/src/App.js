@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-//Main Components
+//The Main Components
 import Header from "./components/Header";
 import CourseList from "./components/CourseList";
 import CourseDetail from "./components/CourseDetail";
